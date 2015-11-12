@@ -32,6 +32,7 @@
     <?php if($Post->readMore()) { ?>
     <a class="btn btn-default btn-lg" href="<?php echo $Post->permalink() ?>"><?php $Language->printMe('Read more') ?></a>
     <?php } ?>
+	<!-- Post date and author -->
 		     <h5><small>
             <?php echo $Post->date() ?></span>
            
