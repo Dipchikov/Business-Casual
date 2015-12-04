@@ -12,16 +12,15 @@
 
         <!-- Post title -->
         <h2 class="post-title">
-            <a href="<?php echo $Post->permalink() ?>"><?php echo $Post->title() ?></a>
-       
-        <!-- Post date and author -->
-               </h2><hr>
+            <hr><a href="<?php echo $Post->permalink() ?>"><?php echo $Post->title() ?></a></h2>
+                   <h4><small><?php echo $Post->description() ?></small></h4><hr>
+        </div>
         </div>
 
     </header>
 
     <!-- Post content -->
-    <div class="col-lg-12 ">
+    <div class="col-lg-12  ">
         <?php echo $Post->content() ?>
 		</div><br>
 		<!-- Post's tags -->
@@ -45,8 +44,8 @@
 					$author = $Post->authorFirstName().' '.$Post->authorLastName();
 				}
 			?>
-			<time><?php echo $Post->date() ?></time>&nbsp;|&nbsp
-			<a><?php echo $author ?></a>
+						<time><?php echo $Post->date() ?></time>&nbsp;|&nbsp
+			<span  div class="name"><?php echo $author ?> </div></span>
 				
              </small></h6>
     </div>
